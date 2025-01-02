@@ -14,11 +14,11 @@ namespace Helldivers.Api.Models
         /// <summary>
         /// The unique identifier of this event.
         /// </summary>
-        public long Id { get; set; }
+        public int Id { get; set; }
         /// <summary>
         /// The type of event.
         /// </summary>
-        public long EventType { get; set; }
+        public int EventType { get; set; }
         /// <summary>
         /// The faction that initiated the event.
         /// </summary>
@@ -42,7 +42,7 @@ namespace Helldivers.Api.Models
         /// <summary>
         /// The identifier of the Campaign linked to this event.
         /// </summary>
-        public long CampaignId { get; set; }
+        public int CampaignId { get; set; }
         /// <summary>
         /// A list of joint operation identifier linked to this event.
         /// </summary>

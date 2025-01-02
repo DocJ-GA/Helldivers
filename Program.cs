@@ -9,8 +9,8 @@ namespace Helldivers
             Console.WriteLine("Hello, World!");
 
             var client = new ApiClient("api.dev.thejacksons.us", "admin@thejacksons.us");
-            var planet = client.GetPlanet(61).Result;
-            Console.WriteLine(planet.Name);
+            var planets = client.GetPlanetEvents().Result;
+            Console.WriteLine(planets.Count() + " events");
             Console.WriteLine("Done");
             _ = Console.ReadLine();
         }

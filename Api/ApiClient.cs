@@ -30,5 +30,10 @@ namespace Helldivers.Api
         {
             return (await _httpClient.GetFromJsonAsync<Planet>(_url + "api/v1/planets/" + index))!;
         }
-    }
+
+        public async Task<IEnumerable<Planet>> GetPlanetEvents()
+        {
+            return (await _httpClient.GetFromJsonAsync<IEnumerable<Planet>>(_url + "api/v1/planet-events"))!;
+        }
+    }   
 }

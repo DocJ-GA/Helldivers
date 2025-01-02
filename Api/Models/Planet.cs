@@ -15,7 +15,7 @@ namespace Helldivers.Api.Models
         /// <summary>
         /// The unique identifier ArrowHead assigned to this planet.
         /// </summary>
-        public int Index { get; set; }
+        public long Index { get; set; }
         /// <summary>
         /// The name of the planet, as shown in game.
         /// </summary>
@@ -35,7 +35,7 @@ namespace Helldivers.Api.Models
         /// <summary>
         /// A hash assigned to the planet by ArrowHead, purpose unknown.
         /// </summary>
-        public int Hash { get; set; }
+        public long Hash { get; set; }
         /// <summary>
         /// The coordinates of this planet on the galactic war map.
         /// </summary>
@@ -75,11 +75,11 @@ namespace Helldivers.Api.Models
         /// <summary>
         /// A set of statistics scoped to this planet.
         /// </summary>
-        public Statistics Statistics { get; set; }
+        public Statistics Statistics { get; set; } = null!;
         /// <summary>
         /// A list of Index integers that this planet is currently attacking.
         /// </summary>
-        public IEnumerable<int> Attacking { get; set; } = [];
+        public IEnumerable<long> Attacking { get; set; } = [];
 
     }
 }

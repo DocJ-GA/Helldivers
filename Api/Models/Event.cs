@@ -14,11 +14,11 @@ namespace Helldivers.Api.Models
         /// <summary>
         /// The unique identifier of this event.
         /// </summary>
-        public int Id { get; set; }
+        public long Id { get; set; }
         /// <summary>
         /// The type of event.
         /// </summary>
-        public int EventType { get; set; }
+        public long EventType { get; set; }
         /// <summary>
         /// The faction that initiated the event.
         /// </summary>
@@ -30,6 +30,10 @@ namespace Helldivers.Api.Models
         /// <summary>
         /// The maximum health of the Event at the time of snapshot.
         /// </summary>
+        public long MaxHealth { get; set; }
+        /// <summary>
+        /// The maximum health of the Event at the time of snapshot.
+        /// </summary>
         public DateTime StartTime { get; set; }
         /// <summary>
         /// When the event started.
@@ -38,7 +42,7 @@ namespace Helldivers.Api.Models
         /// <summary>
         /// The identifier of the Campaign linked to this event.
         /// </summary>
-        public int CampaignId { get; set; }
+        public long CampaignId { get; set; }
         /// <summary>
         /// A list of joint operation identifier linked to this event.
         /// </summary>

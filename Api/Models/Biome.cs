@@ -14,10 +14,10 @@ namespace Helldivers.Api.Models
         /// <summary>
         /// The name of this biome.
         /// </summary>
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
         /// <summary>
         /// A human-readable description of the biome.
         /// </summary>
-        public string Description { get; set; }
+        public string Description { get; set; } = string.Empty;
     }
 }

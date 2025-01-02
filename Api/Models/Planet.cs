@@ -79,8 +79,7 @@ namespace Helldivers.Api.Models
         /// <summary>
         /// A list of Index integers that this planet is currently attacking.
         /// </summary>
-        public IEnumerable<int> Attacking { get; set; }
-
+        public IEnumerable<int> Attacking { get; set; } = [];
 
     }
 }
